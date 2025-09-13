@@ -70,5 +70,3 @@ if df is not None:
         prediction = model.predict([np.array(input_features)])
         label = encoder.inverse_transform(prediction)[0]
         st.success(f"Predicted Engagement Level: **{label}**")
-
-!pip install streamlit
